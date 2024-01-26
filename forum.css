@@ -1,3 +1,14 @@
 body {
     font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 30px;
+}
+
+label {
+    padding: 15px;
 }
