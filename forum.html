@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="forum.css" />
+    <script src="forum.js"></script>
   </head>
   <body>
     <div>
@@ -15,19 +16,17 @@
     <div>
       <div>
         <form>
-          <div>
+          <div class="divider" id="daforums">
             <label>FIRST</label>
-            <input />
+            <input id="name" class="input1" />
             <label>LAST</label>
-            <input />
-          </div>
-          <div class="divider">
-            <label>EMAIL</label>
-            <input />
+            <input id="name2" class="input2" />
             <label>PHONE</label>
-            <input />
+            <input type="tel" id="number" class="input3" />
+            <label>PASS</label>
+            <input type="password" id="pass" class="input4" />
           </div>
-          <div><button>JOIN!</button></div>
+          <div><button onclick="SaveToText()">JOIN!</button></div>
         </form>
       </div>
     </div>
