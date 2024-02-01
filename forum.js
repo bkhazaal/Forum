@@ -12,3 +12,14 @@ function SaveToText() {
   downloadLink.click();
   document.body.removeChild(downloadLink);
 }
+
+var colors = ["black", "white"];
+var headers = document.querySelectorAll("h1");
+
+function Blinking() {
+  headers.forEach((header, index) => {
+    header.style.color = colors[index % colors.length];
+  });
+}
+
+setInterval(Blinking, 1000);

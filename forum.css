@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Sixtyfour);
+
 body {
     font-family: sans-serif;
     display: flex;
@@ -16,6 +18,7 @@ label {
     padding: 10px;
     display: block;
     margin-right: 20px;
+    font-family: Sixtyfour;
 }
 
 .divider {
@@ -25,6 +28,9 @@ label {
 
 h1 {
     font-size: 60px;
+    font-family: Sixtyfour;
+    line-height: 120px;
+
 }
 
 button {
@@ -35,7 +41,12 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-family: Sixtyfour;
     margin-right: 20px;
+  }
+
+  button:hover {
+    background-color: #00794d;
   }
 
   #daforums {
@@ -60,3 +71,4 @@ button {
         margin-top: 20px;
     }
   }
+
