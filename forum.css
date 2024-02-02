@@ -19,6 +19,9 @@ label {
     display: block;
     margin-right: 20px;
     font-family: Sixtyfour;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .divider {
@@ -26,7 +29,7 @@ label {
     margin-top: 15px;
 }
 
-h1 {
+h1, span {
     font-size: 60px;
     font-family: Sixtyfour;
     line-height: 120px;
@@ -49,12 +52,6 @@ button {
     background-color: #00794d;
   }
 
-  #daforums {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
   .input1, .input2, .input3, .input4 {
     border-radius: 1px;
     height: 26px;
@@ -62,7 +59,7 @@ button {
     margin-bottom: 10px;
     padding: 0px 6px;
   }
-
+  
   @media only screen and (max-width: 912px) {
     body {
         text-align: center;
@@ -71,4 +68,3 @@ button {
         margin-top: 20px;
     }
   }
-

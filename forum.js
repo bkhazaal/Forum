@@ -13,13 +13,17 @@ function SaveToText() {
   document.body.removeChild(downloadLink);
 }
 
-var colors = ["black", "white"];
-var headers = document.querySelectorAll("h1");
-
 function Blinking() {
-  headers.forEach((header, index) => {
-    header.style.color = colors[index % colors.length];
-  });
+  var blinkingtext = document.getElementById("blinkerHeader");
+  if (blinkingtext) {
+    var span = document.createElement("span");
+    span.textContent = blinkingtext.textContent;
+    span.style.opacity = 1;
+    blinkingtext.innerHTML = "";
+    blinkingtext.appendChild(span);
+    setTimeout(function () {
+      span.style.opacity = 0;
+    }, 500);
+  }
 }
-
 setInterval(Blinking, 1000);
