@@ -5,10 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="forum.css" />
     <script src="forum.js"></script>
+    <style>
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      #blinker {
+        animation: blink infinite;
+      }
+    </style>
   </head>
-  <body onload="Blinking()" onload="Blinking2()">
+  <body>
     <div>
-      <h1 id="blinkerHeader">Sign Up Today!</h1>
+      <h1 id="blinker">Sign Up Today!</h1>
     </div>
     <div>
       <div>
