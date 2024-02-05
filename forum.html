@@ -5,25 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="forum.css" />
     <script src="forum.js"></script>
-    <style>
-      @keyframes blink {
-        0% {
-          opacity: 1;
-        }
-        50% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-
-      #blinker {
-        animation: blink infinite;
-      }
-    </style>
   </head>
-  <body>
+  <body onload="Blinking()">
     <div>
       <h1 id="blinker">Sign Up Today!</h1>
     </div>
@@ -31,16 +14,16 @@
       <div>
         <form>
           <div class="divider">
-            <label>FIRST</label>
+            <label id="blinker2">FIRST</label>
             <input id="name" class="input1" />
-            <label>LAST</label>
+            <label id="blinker3">LAST</label>
             <input id="name2" class="input2" />
-            <label>PHONE</label>
+            <label id="blinker4">PHONE</label>
             <input type="tel" id="number" class="input3" />
-            <label>PASS</label>
+            <label id="blinker5">PASS</label>
             <input type="password" id="pass" class="input4" />
           </div>
-          <div><button onclick="SaveToText()">JOIN!</button></div>
+          <div><button id="blinker6" onclick="SaveToText()">JOIN!</button></div>
         </form>
       </div>
     </div>
